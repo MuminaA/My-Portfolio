@@ -1,0 +1,129 @@
+/* resets */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: monospace;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Headings */
+
+h2 {
+    
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.container-fluid {
+    padding: 2% 15%;
+}
+
+/* Title page */
+
+.title {
+    display: flex;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.project-link {
+    display: flex;
+    gap: 10px;
+}
+
+.project-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.line-break::after {
+    content: "\a ";
+    white-space: pre;
+}
+
+/* About me section */
+
+.aboutme {
+    display: flex;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.about-me-para {
+    margin-right: 30%;
+}
+
+/* My Projects */
+
+.projects-header {
+    margin: 30px 0;
+}
+
+/* Contacts */
+
+.contact-header {
+    margin: 30px 0;
+}
+
+.form {
+    border: 3px solid #E392B6;
+    padding: 3%;
+    border-radius: 20px;
+}
