@@ -169,6 +169,6 @@ h2 {
 
 /* success page */
 
-a {
+.success-arrow a {
     color: black;
 }
