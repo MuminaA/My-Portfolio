@@ -166,3 +166,9 @@ h2 {
 .project-text a:hover {
     color: #E392B6;
 }
+
+/* success page */
+
+a {
+    color: black;
+}
