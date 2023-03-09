@@ -46,12 +46,13 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  margin: 0;
 }
 
 /* Headings */
 h1 {
-    font-size: 2.5rem;
-    padding-bottom: 1%;
+    font-size: 3rem;
+    letter-spacing: 10px;
 }
 
 h2 {
@@ -83,9 +84,14 @@ h2 {
     align-items: left;
 }
 
+.title-paragraph {
+    margin-top: 2%;
+}
+
 .project-link {
     display: flex;
     gap: 10px;
+    margin-top: 2%;
 }
 
 .project-link a {
@@ -96,6 +102,30 @@ h2 {
 .line-break::after {
     content: "\a ";
     white-space: pre;
+}
+
+/* typewriter animation */
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid black;
+    font-size: 1.6rem;
+    width: 0;
+    white-space: nowrap;
+    animation: typing 4s steps(15, end) forwards, blink .8s infinite;
+}
+
+.container {
+    display: inline-block;
+}
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+@keyframes blink {
+    from { border-color: transparent}
+    to {border-color: black;}
 }
 
 /* About me section */
@@ -143,12 +173,17 @@ h2 {
     border-radius: 20px;
 }
 
-.text-md-left {
-    padding-top: 15px
-}
-
 .name-email {
     padding-bottom: 15px;
+}
+
+.text-area {
+    padding-bottom: 15px;
+}
+
+button {
+    border: none;
+    background-color: white;
 }
 
 /* animation */

@@ -54,7 +54,7 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#aboutme">About</a>
             <a class="nav-link" href="#projects">Projects</a>
             <a class="nav-link" href="#contacts">Contacts</a>
@@ -68,10 +68,10 @@
       <div class="container-fluid">
         <div class="title">
           <div class="title-text">
-            <div class="typewriter">
+            <div class="typewriter typed-out">
               <h1>&lt;Hello, friend&gt;</h1>
             </div>
-            <div>
+            <div class="title-paragraph">
               <p>
                 Welcome to my personal portfolio! Dedicated to front-end
                 <span class="line-break"></span>
@@ -258,43 +258,49 @@
               <form
                 id="contact-form"
                 name="contact-form"
-                action="https://formsubmit.co/c22c4b481efc8feb305a90d193b8b698" method="POST"
-                
+                action="https://formsubmit.co/c22c4b481efc8feb305a90d193b8b698"
+                method="POST"
               >
-              <!-- Honeypot -->
-              <input type="text" name="_honey" style="display: none;">
-              <!-- Disable captcha -->
-              <input type="hidden" name="_captcha" value="false">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none" />
+                <!-- Disable captcha -->
+                <input type="hidden" name="_captcha" value="false" />
 
-              <input type="hidden" name="_next" value="https://muminaa.github.io/My-Portfolio/success.html">
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://muminaa.github.io/My-Portfolio/success.html"
+                />
 
                 <div class="row name-email">
                   <div class="col-md-6">
                     <div class="md-form mb-0">
-                      <label for="name" class="">Your name</label>
+                      <label for="name" class="">Your name *</label>
                       <input
                         type="text"
                         id="name"
                         name="name"
                         class="form-control"
-                        placeholder="John Doe" required
+                        placeholder="John Doe"
+                        required
                       />
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <label for="email" class="">Your email</label>
+                    <label for="email" class="">Your email *</label>
                     <div class="md-form mb-0">
                       <input
                         type="email"
                         id="email"
                         name="email"
                         class="form-control"
-                        placeholder="JohnDoe@email.com" required
+                        placeholder="JohnDoe@email.com"
+                        required
                       />
                     </div>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row text-area">
                   <div class="col-md-12">
                     <div class="md-form">
                       <label for="message">Your message</label>
@@ -309,13 +315,12 @@
                   </div>
                 </div>
               </form>
-              <div class="text-md-left">
-                <a
-                  class="btn btn-outline-dark"
-                  onclick="document.getElementById('contact-form').submit();"
+              <button class="btn btn-outline-dark" type="submit">
+                <a onclick="document.getElementById('contact-form').submit();"
                   >Send</a
                 >
-              </div>
+              </button>
+
               <div class="status"></div>
             </div>
             <div class="col-md-3 text-center">
